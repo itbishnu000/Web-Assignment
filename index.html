@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .title {
+            background-color: khaki;
+        }
+
+        .col {
+            color: azure;
+        }
+
+        .font {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".btnH").click(function () {
+                $(".hi").hide("show");
+            });
+            $(".btnS").click(function () {
+                $(".sh").show("slow");
+            });
+
+            $(".btnout").click(function () {
+                $(".out").fadeOut("slow");
+            });
+            $(".btnin").click(function () {
+                $(".in").fadeIn("slow");
+            });
+            $(".btntog").click(function () {
+                $(".tog").fadeToggle("slow");
+            });
+
+            $(".btnto").click(function () {
+                $(".to").fadeTo("slow", .2);
+            });
+
+            $(".btnup").click(function () {
+                $(".sup").slideUp("slow");
+            });
+            $(".btndown").click(function () {
+                $(".sdown").slideDown("slow");
+            });
+            $(".btnstog").click(function () {
+                $(".stog").slideToggle("slow");
+            });
+
+            $(".btnsup").click(function () {
+                $(".stop").slideUp(3000);
+            });
+            $(".btnstop").click(function () {
+                $(".stup").stop();
+            });
+
+            $(".btnsdown").click(function () {
+                $(".stdown").slideDown(3000);
+            });
+
+            $(".btnchain").click(function () {
+                $(".chain").slideUp(3000);
+                $(".chain").slideDown(3000);
+            });
+
+            $(".btncall").click(function () {
+                $(".call").slideUp(3000);
+                $(".call").slideDown(3000, function () {
+                    alert(" || Thanks For Watching tha Website ||");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid title">
+        <div class="container">
+            <h1 class="display-4 text-center">
+                Vimal Tormal BCA & Commerce Collage
+            </h1>
+            <p class="h3 text-center">
+                Subject : 306(II) Web DeSigning JQuery Practical Sheet
+            </p>
+            <p class="h3 text-center font col">
+                || Name: A15 Jena Bishnu Prasd ||
+            </p>
+
+        </div>
+    </div>
+    <div class="alert alert-primary h3 font">
+        Q1. Create one Web page which will show implementation of JQuery .
+    </div>
+    <div class="col-12">
+        <div class="h3 font">1. Hide() & Show()</div>
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header">This is Hide & show methods</div>
+            <div class="card-body hi sh">
+                <h5 class="card-title">Primary card </h5>
+                <p class="card-text">
+                    Some quick example text to build on the card and make up the
+                    bulk of the card's content.
+                </p>
+            </div>
+        </div>
+        <div class="col-12 ">
+            <button type="button" class="btn btn-info btn btnH">Hide</button>
+            <button type="button" class="btn btn-info btn Show btnS">Show</button>
+        </div>
+    </div>
+    <br />
+    <div class="col-12">
+        <div class="h3 font">2. Fade()</div>
+        <div class="card text-dark h5 font bg-light mb-3">
+            <div class="card-header">This FedeOut() & FedeIn() & FedeToggle() & FedeTo() methods </div>
+            <div class="card bg-dark text-white out in tog to">
+                <img class="card-img" src="w1.jpg" alt="Card image">
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <button type="button" class="btn btn-info btn btnout">FadeOut</button>
+            <button type="button" class="btn btn-info btn btnin">FadeIn</button>
+            <button type="button" class="btn btn-info btn btntog">FadeToggle</button>
+            <button type="button" class="btn btn-info btn btnto">FadeTo</button>
+        </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <div class="h3 font">3. Slide()</div>
+        <div class="card text-dark h5 font bg-light mb-3">
+            <div class="card-header">This SlideUp() & SlideIn() & SlideToggle() methods </div>
+            <div class="card bg-dark text-white sup sdown stog">
+                <img class="card-img" src="w2.jpg" alt="Card image">
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <button type="button" class="btn btn-info btn btnup">SlideUp</button>
+            <button type="button" class="btn btn-info btn btndown">SlideDown</button>
+            <button type="button" class="btn btn-info btn btnstog">SlideToggle</button>
+        </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <div class="h3 font">4. Stop()</div>
+        <div class="card text-dark h5 font bg-light mb-3">
+            <div class="card-header">This Stop() methods</div>
+            <div class="card bg-dark text-white stup stop stdown">
+                <img class="card-img" src="w3.jpg" alt="Card image">
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-info btn btnsup">SlidUp</button>
+            <button type="button" class="btn btn-info btn btnstop">Stop</button>
+            <button type="button" class="btn btn-info btn btnsdown">SlideDown</button>
+        </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <div class="h3 font">5. Chaining()</div>
+        <div class="card text-dark h5 font bg-light mb-3">
+            <div class="card-header">This Chainig() methods </div>
+            <div class="card bg-dark text-white chain">
+                <img class="card-img" src="w4.jpg" alt="Card image">
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-info btn btnchain">Chaining</button>
+        </div>
+    </div>
+    <br>
+    <div class="col-12">
+        <div class="h3 font">6. CallBack() </div>
+        <div class="card text-dark h5 font bg-light mb-3">
+            <div class="card-header">This CallBack() methods </div>
+            <div class="card bg-dark text-white call">
+                <img class="card-img" src="w5.jpg" alt="Card image">
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-info btn btncall">Click</button>
+        </div>
+    </div>
+
+    <div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="Q4.html" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="Q2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="Q3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="Q4.html">4</a></li>
+          <li class="page-item">
+            <a class="page-link" href="Q2.html">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+</body>
+
+</html>

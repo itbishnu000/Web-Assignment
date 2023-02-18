@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Assignment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <style>
+        .font {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".btngtext").click(function () {
+                alert("Text: " + $(".gtex").text());
+            });
+            $(".btnghtml").click(function () {
+                alert("HTML: " + $(".ghtm").html());
+            });
+            $(".btngval").click(function () {
+                alert("Value: " + $(".gval").val());
+            });
+
+            $(".btntext").click(function () {
+                $(".tex").text("Hello I am Bishnu Prasad");
+            });
+
+            $(".btnhtml").click(function () {
+                $(".htm").html("<b><u>Hello I am Bishnu Prasad</b></u>");
+            });
+
+            $(".btnvalu").click(function () {
+                $(".valu").val("@BishnuPrasad237960");
+            });
+
+            $(".btncss").click(function () {
+                $(".alert").css("background-color", "#FFFFC2");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="alert alert-primary h3 font">
+        Q2. Create one web page to show implementation of jquery DOM manipulation methods.
+    </div>
+    <div class="col-12">
+        <div class="h3 font">1.Get Content - text(), html(), and val()</div>
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Get Content - Text()</div>
+            <div class="card-body">
+                <h5 class="card-title">Primary card </h5>
+                <p class="gtex">Some quick example text to build on the card and make up the bulk of the card's content.
+                </p>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btngtext"><b>TEXT</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Get Content - Html()</div>
+            <div class="card-body">
+                <h5 class="card-title ">Primary card </h5>
+                <p class="card-text ghtm"> Some quick example <b>text to build on the card</b> and <u>make up the bulk
+                        of the card's content.</u></p>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btnghtml"><b>HTML</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Get Content - Val()</div>
+            <div class="card-body">
+                <h5 class="card-title htm">Primary card </h5>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Name</span>
+                    </div>
+                    <input type="text" class="form-control gval" aria-label="Large"
+                        aria-describedby="inputGroup-sizing-sm" value="@KrishnaKumar000">
+                </div>
+                <br>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btngval"><b>VALUE</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="h3 font">1.1. Set Content - text(), html(), and val()</div>
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Set Content - Text()</div>
+            <div class="card-body">
+                <h5 class="card-title tex">Primary card </h5>
+                <p class="card-text">
+                    Some quick example text to build on the card and make up the
+                    bulk of the card's content.
+                </p>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btntext"><b>TEXT</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Set Content - Html()</div>
+            <div class="card-body">
+                <h5 class="card-title htm">Primary card </h5>
+                <p class="card-text">
+                    Some quick example text to build on the card and make up the
+                    bulk of the card's content.
+                </p>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btnhtml"><b>HTML</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Set Content - Val()</div>
+            <div class="card-body">
+                <h5 class="card-title htm">Primary card </h5>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Name</span>
+                    </div>
+                    <input type="text" class="form-control valu" aria-label="Large"
+                        aria-describedby="inputGroup-sizing-sm" value="@KrishnaKumar000">
+                </div>
+                <br>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btnvalu"><b>VALUE</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Set Content - Css()</div>
+            <div class="card-body">
+                <div class="alert alert-primary" role="alert">
+                    Sets or returns one or more style properties for the selected elements
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    Sets or returns one or more style properties for the selected elements
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Sets or returns one or more style properties for the selected elements
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    Sets or returns one or more style properties for the selected elements
+                </div>
+            </div>
+            <div class="col-12 ">
+                <button type="button" class="btn btn-info btn-lg btncss"><b>CSS</b></button>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="index.html" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="Q2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="Q3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="Q4.html">4</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="Q3.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</body>
+
+</html>

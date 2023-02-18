@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Assignment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <style>
+        .font {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".btnrev").click(function () {
+                $(".remove").remove();
+            });
+            $(".btnadd").click(function () {
+                $(".add").append();
+            });
+
+            $(".btnemp").click(function () {
+                $(".emp").empty();
+            });
+            
+            $(".btneadd").click(function () {
+                $(".eadd").append("<p>The jQuery empty() method removes the child elements of the selected element(s).</p><p>The jQuery empty() method removes the child elements of the selected element(s).</p><p>The jQuery empty() method removes the child elements of the selected element(s).</p><p>The jQuery empty() method removes the child elements of the selected element(s).</p><p>The jQuery empty() method removes the child elements of the selected element(s).</p>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="alert alert-primary h3 font">
+        Q4. Create one web page to show implementation of jquery Remove Elements methods.
+    </div>
+    <div class="col-12">
+        <div class="h3 font">1.Insert Content - Remove(), Empty()</div>
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Remove Content - Remove()</div>
+            <div class="card-body">
+                <h5 class="card-title">Primary card </h5>
+                <div class="alert alert-success remove add ">
+                <p>The jQuery remove() method removes the selected element(s) and its child elements.</p>
+                <p>The jQuery remove() method removes the selected element(s) and its child elements.</p>
+                <p>The jQuery remove() method removes the selected element(s) and its child elements.</p>
+                <p>The jQuery remove() method removes the selected element(s) and its child elements.</p>
+                <p>The jQuery remove() method removes the selected element(s) and its child elements.</p>
+            </div>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btnrev"><b>REMOVE</b></button>
+                    <button type="button" class="btn btn-info btn-lg btnadd"><b>ADD</b></button>
+                </div>
+            </div>
+        </div>
+        <div class="card text-dark h5 font bg-light mb-3 ">
+            <div class="card-header h3">This is Remove Content - Empty()</div>
+            <div class="card-body">
+                <h5 class="card-title ">Primary card </h5>
+                <div class="alert alert-danger emp eadd">
+                    <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+                    <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+                    <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+                    <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+                    <p>The jQuery empty() method removes the child elements of the selected element(s).</p>
+                </div>
+                <div class="col-12 ">
+                    <button type="button" class="btn btn-info btn-lg btnemp"><b>EMPTY</b></button>
+                    <button type="button" class="btn btn-info btn-lg btneadd"><b>ADD</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="Q3.html" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="Q2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="Q3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="Q4.html">4</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</body>
+
+</html>
